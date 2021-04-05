@@ -196,3 +196,53 @@ header nav ul li a {
   grid-row: span 2;
 }
 /* Content Styles END */
+/* Footer Styles START */
+footer {
+  display: flex;
+  padding: 30px 45px;
+  background-color: var(--medium);
+  color: var(--dark);
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Cinzel', serif;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer h5 {
+  display: flex;
+  justify-self: flex-start;
+  font-family: 'Cinzel', serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: var(--dark);
+}
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+footer ul li a {
+  margin: 0 30px;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none; 
+  color: var(--light);
+  border-bottom: 1px solid var(--light);
+}
+footer p {
+  line-height: 1.5;
+  text-align: right;
+  align-self: flex-end;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  color: var(--dark);
+  opacity: .5;
+}
+footer a {
+  color: var(--dark);
+}
+/* Footer Styles END */

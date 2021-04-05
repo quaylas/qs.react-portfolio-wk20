@@ -34,7 +34,7 @@ function Contact () {
     };
 
     return (
-        <section className="about-me-section grid-outer">
+        <section className="about-me-section content grid-outer">
         <h2>Contact Me</h2>
         <form id="contact-form" className="contact-me-form grid-content" onSubmit={handleSubmit} >
             <div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from '../Header';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
+import Footer from '../Footer';
 
 function Portfolio() {
     const [currentPage, handlePageChange] = useState('About');
@@ -22,9 +23,10 @@ function Portfolio() {
     return (
         <main>
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-            <div>
-                {renderPage(currentPage)}
-            </div>
+    
+            {renderPage(currentPage)}
+            
+            <Footer></Footer>
         </main>
     );
 }
