@@ -12,7 +12,7 @@ function Nav(props) {
                     key={tab}>
                         <a href={'#' + tab} 
                         onClick={() => props.handlePageChange(tab)}
-                        className={props.currentPage === tab ? 'nav-link active' : 'nav-link'}>
+                        className={`${props.currentPage === tab && 'active'}`}>
                             {capitalizeFirstLetter(tab)}
                             </a>
                     </li>

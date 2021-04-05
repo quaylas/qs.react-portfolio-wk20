@@ -15,7 +15,7 @@ function Portfolio() {
                 return <Contact />
 
             default:
-                return <div></div>
+                return <About />
         }
     };
 
