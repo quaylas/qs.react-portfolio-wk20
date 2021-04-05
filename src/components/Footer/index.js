@@ -8,13 +8,13 @@ function Footer() {
                 <a href="mailto:quayla@cxadvisors.com">Email</a>
             </li>
             <li>
-                <a href="https://github.com/quaylas/" target="_blank">GitHub</a>
+                <a href="https://github.com/quaylas/" target="_blank" rel="noreferrer">GitHub</a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/quayla-skevington-26aa125b/" target="_blank">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/quayla-skevington-26aa125b/" target="_blank" rel="noreferrer">LinkedIn</a>
             </li>
             <li>
-                <a href="https://open.spotify.com/user/1246742192?si=7hyXOcOdTvCovG9tZQAlxA" target="_blank">Spotify</a>
+                <a href="https://open.spotify.com/user/1246742192?si=7hyXOcOdTvCovG9tZQAlxA" target="_blank" rel="noreferrer">Spotify</a>
             </li>
         </ul>
         <h5>Come as you are. Leave Equipped.</h5>

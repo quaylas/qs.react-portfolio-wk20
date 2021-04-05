@@ -1,10 +1,9 @@
-import hero from './assets/hero/PortfolioHero.jpeg';
 import './App.css';
-import Portfolio from './components/Portfolio';
+import PortfolioContainer from './components/Main';
 
 function App() {
   return (
-    <Portfolio />
+    <PortfolioContainer />
   );
 }
 

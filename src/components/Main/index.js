@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import Header from '../Header';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
+import Portfolio from '../pages/Portfolio';
+import Resume from '../pages/Resume';
 import Footer from '../Footer';
 
-function Portfolio() {
+function PortfolioContainer() {
     const [currentPage, handlePageChange] = useState('About');
 
     const renderPage = (currentPage) => {
@@ -15,6 +17,12 @@ function Portfolio() {
             case 'contact':
                 return <Contact />
 
+            case 'portfolio':
+                return <Portfolio />
+
+            case 'resume':
+                return <Resume />
+            
             default:
                 return <About />
         }
@@ -31,4 +39,4 @@ function Portfolio() {
     );
 }
 
-export default Portfolio;
+export default PortfolioContainer;
