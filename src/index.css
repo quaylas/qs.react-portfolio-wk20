@@ -59,6 +59,11 @@ header nav ul li a {
   color: var(--light);
   border-bottom: 1px solid var(--medium);
 }
+.active {
+  padding: 5px 10px;
+  background-color: var(--light);
+  color: var(--dark);
+}
 /* Header Styles END */
 /* Hero Styles START */
 .hero{
