@@ -11,13 +11,13 @@ function Contact () {
             const isValid = validateEmail(e.target.value);
 
             if(!isValid){
-                setErrorMessage('email address is not valid');
+                setErrorMessage('you must enter a valid email!');
             } else {
                 setErrorMessage('');
             }
         } else {
             if(!e.target.value){
-                setErrorMessage(`${e.target.name} is required`);
+                setErrorMessage(`${e.target.name} is required!`);
             } else {
                 setErrorMessage('');
             }
@@ -36,15 +36,15 @@ function Contact () {
     return (
         <section className="about-me-section grid-outer">
         <h2>Contact Me</h2>
-        <form id="contact-form" className="contact-me-content grid-content" onSubmit={handleSubmit} >
+        <form id="contact-form" className="contact-me-form grid-content" onSubmit={handleSubmit} >
             <div>
                 <input type="text" name="name" placeholder="Name" defaultValue={name} onBlur={handleChange} />
-            </div>
-            <div>
+            {/* </div>
+            <div> */}
                 <input type="email" name="email" placeholder="Email Address" defaultValue={email} onBlur={handleChange} />
             </div>
             <div>
-                <textarea name="message" rows="5" placeholder="Message" defaultValue={message} onBlur={handleChange} />
+                <textarea name="message" rows="15" placeholder="Message" defaultValue={message} onBlur={handleChange} />
             </div>
             {errorMessage && (
                 <div>
