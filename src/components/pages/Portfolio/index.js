@@ -1,5 +1,6 @@
 import React from 'react';
 import Project from  '../../Project';
+import boostMeImg from '../../../assets/small/boostMe.png';
 import readViewsImg from '../../../assets/small/read-views.png';
 import dateNightImg from '../../../assets/small/date-night.png';
 import weatherImg from '../../../assets/small/weather-dashboard.png';
@@ -8,12 +9,19 @@ import socialImg from '../../../assets/small/ledLights_A.Nanavati.jpg'
 import passwordImg from '../../../assets/small/password-generator.png'
 
 function Portfolio() {
-    const projects = [
+    const projects = [ 
+        {
+            pName: 'BoostMe',
+            repoURL: 'https://github.com/quaylas/boostme',
+            liveURL: 'https://boostme-0421.herokuapp.com/',
+            technologies: 'MERN Stack, Heroku', 
+            img: boostMeImg
+        }, 
         {
             pName: 'ReadViews',
             repoURL: 'https://github.com/quaylas/readviews',
             liveURL: 'https://readviews-022021.herokuapp.com/', 
-            technologies: 'MySQL, Full Stack, Heroku',
+            technologies: 'MySQL, Heroku',
             img: readViewsImg
         }, 
         {
@@ -43,15 +51,7 @@ function Portfolio() {
             liveURL: 'https://quaylas.github.io/qs.codequiz.wk4/',
             technologies: 'JavaScript', 
             img: codeQuizImg
-        },   
-        {
-            pName: 'Password Generator',
-            repoURL: 'https://github.com/quaylas/qs.passwordgenerator.wk3/',
-            liveURL: 'https://quaylas.github.io/qs.codequiz.wk3/',
-            technologies: 'JavaScript',
-            img: passwordImg
         }, 
-
     ]
 
 
